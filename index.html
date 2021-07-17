@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>chat site</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+</head>
+
+<body style="height: 100%;width: 100%;margin: auto;">
+    <div id="LoginBox" style="height: 642px;width: 600px;background: #1d2c3d;margin: auto;box-shadow: 0px 2px 20px 20px #223244;border-radius: 12px;margin-bottom: -50px;">
+        <form id="LoginBar" style="width: 100%;padding-bottom: 8px;height: 198.188px;margin-top: -15%;">
+            <p style="text-align: center;">Name:</p><input class="form-control" type="text" id="Username" style="width: 215px;height: 40px;" autocomplete="off" placeholder="username">
+            <p style="text-align: center;">Avatar Link:</p><input class="form-control" type="text" id="Avatar" style="width: 215px;height: 40px;" autocomplete="off" placeholder="https://www.example.com/img.png"><button class="btn btn-primary" id="LoginButton" type="button" style="width: 65px;height: 40px;">login<br></button><img id="AvatarImg" style="width: 50px;height: 50px;margin-left: 84px;margin-top: -4px;">
+        </form><script src="/socket.io/socket.io.js"></script>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/markdown.min.js"></script>
+    <script src="assets/js/Login.js"></script>
+</body>
+
+</html>

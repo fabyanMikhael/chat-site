@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;height: 100%;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>chat_site</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+</head>
+
+<body style="height: 100%;width: 100%;margin: auto;">
+    <div id="MsgBox" style="height: 850px;width: 600px;background: #1d2c3d;margin: auto;box-shadow: 0px 2px 20px 20px #223244;border-radius: 12px;margin-bottom: -50px;">
+        <form id="ActionBar" style="width: 100%;padding-bottom: 8px;padding-top: 8px;margin-bottom: -6px;"><button class="btn btn-primary" id="emoji-button" type="button">😀<br></button><input class="form-control" type="text" id="MsgInput" style="width: 409px;" autocomplete="off" autofocus=""><button class="btn btn-primary disabled" id="MsgSendButton" type="button" disabled="">Send<br></button></form>
+        <div id="MsgHistory" style="width: 95%;height: 90%;margin: auto;padding-top: 5px;border-radius: 12px;">
+            <ul id="messages" style="padding-left: 5px;padding-right: 5px;background: transparent;"></ul>
+        </div><script src="/socket.io/socket.io.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+<script>hljs.highlightAll();</script><emoji-picker id="emoji-picker" style="margin-top: -165px;diplay: none;"></emoji-picker>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/markdown.min.js"></script>
+    <script src="assets/js/Client.js"></script>
+</body>
+
+</html>

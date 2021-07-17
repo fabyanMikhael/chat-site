@@ -1,0 +1,167 @@
+:root {
+  --button-size: 10px;
+  --button-color: #324759;
+}
+
+html {
+  --scrollbarBG: #202b38;
+  --thumbBG: #161f27;
+  font-size: 25px;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  background-color: #202b38;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  color: white;
+  white-space: pre-wrap;
+}
+
+a {
+  cursor: pointer;
+  color: darkgreen;
+  font-weight: bolder;
+  text-decoration: underline;
+  background-color: rgba(20, 30, 41,190);
+  padding: 6px;
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+/* Grid container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+}
+
+/* Text input */
+
+input, textarea {
+  background-color: #161f27;
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+  color: white !important;
+  outline: none;
+  box-shadow: none !important;
+  resize: none;
+}
+
+/* Button */
+
+button {
+  background-color: var(--button-color);
+  border-color: transparent;
+  border-radius: 5px;
+  margin: 2px;
+  padding: var(--button-size);
+  padding-left: calc(var(--button-size) * 1.5);
+  padding-right: calc(var(--button-size) * 1.5);
+  box-shadow: 0 3px black !important;
+  color: white;
+  outline: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button:active {
+  transform: translateY(4px);
+  outline-width: 0;
+}
+
+button:disabled {
+  background-color: rgba(119,116,116,0.05);
+}
+
+code {
+  /*white-space: pre;*/
+}
+
+/* BY ID */
+
+#messages li {
+  padding-top: 15px;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: var(--bs-gray-dark);
+  margin-top: 15px;
+  min-height: 50px;
+  word-wrap: break-word;
+}
+
+#messages li:hover {
+  background-color: rgba(235,229,229,0.05);
+}
+
+#messages {
+  list-style-type: none;
+}
+
+#MsgBox, #LoginBox {
+  position: relative;
+  top: 50px;
+}
+
+#ActionBar {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #1d2c3d;
+}
+
+#MsgHistory {
+  overflow: auto;
+}
+
+#LoginBar {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/* Classes */
+
+.MessageAvatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 15px;
+  box-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+.UserInfoSpan {
+  grid-column-gap: 0px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.Username {
+  color: rgb(255,98,98);
+  text-shadow: 1px 1px black;
+}
+
+.hljs {
+  background: #141e29 !important;
+  background-color: #141e29 !important;
+}
+
